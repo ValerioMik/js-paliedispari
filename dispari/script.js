@@ -15,11 +15,11 @@ Dichiariamo chi ha vinto. */
 
 var numeroUtente = parseInt(prompt("inserisci un numero compreso tra  1 a 5"));
 var SceltaUtente = prompt("sclegli pari o dispari");
-var computerscelta =[generaNumero];
+var computerscelta =generaNumero();
 
 console.log(numeroUtente,SceltaUtente,computerscelta);
 
-let inumeriscelti =sommaInumeri(numeroUtente,computerscelta,computerscelta);
+let inumeriscelti =sommaInumeri(numeroUtente,computerscelta);
     if(SceltaUtente === controlloParidisp(inumeriscelti)){
         console.log(" bravo hai vinto");
     }else {
