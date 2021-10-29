@@ -1,37 +1,14 @@
-/* Palidroma:
-Chiedere all’utente di inserire una parola
-Creare una funzione per capire se la parola inserita è palindroma.
-Dare l’output relativo. */
+/* Pari e Dispari
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+Sommiamo i due numeri
+Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+Dichiariamo chi ha vinto. */
 
-//DONE=>1.inserisco un prompt per chiedere la parola all'utente
-//DONE=>1.1.faccio si che la parola venga inserita in una variabile
-//DONE=>1.2faccio si che la parola inserita venga girata tramite una funzione
-//DONE=>inserisco questultima in un altra variabile
-//2.DONE=> comparo le due parole tramite una funzione 
-//2.1DONE=>se la parola inserita dall'utente e uguale alla parola girata
-//2.2DONE=> stampo "si la parola inserita e palindroma"
-//2.3DONE=> altrimenti stampo no la parola non è palindroma
-
-var parolaInserita = prompt("inserisci una parola");
-var parolainversa = invertiParola(parolaInserita);
-
-if (comparaParola(parolaInserita, parolainversa)) {
-    console.log("si la parola inserita e palindroma");
-}else {
-    console.log("no la parola inserita e palindroma");
-}
-
-
-
-
-    function invertiParola(stringa) {
-        var stringaInversa =
-            stringa.split('').reverse().join('');
-        return stringaInversa;
-    }
-
-    function comparaParola(stringa1, stringa2) {
-        var controllo =
-            stringa1 == stringa2;
-        return controllo;
-    }
+//facciamo inserire un numero da 1 a 5 all'utente
+//facciamo inserire pari o dispari  all'utente
+//generiamo sempre un numero da 1 a 5 per il computer tramite una funzione
+//sommiamo le due somme uscite 
+    //sommiamo la somma dei numeri estratti 
+        //confrontiamo le scelte con la somma  tramite funzione
+        //stampiamo il vincitore
